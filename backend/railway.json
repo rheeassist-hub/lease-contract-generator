@@ -1,7 +1,6 @@
 {
-  "$schema": "https://json.schemastore.org/railway.json",
   "build": {
-    "builder": "nixpacks"
+    "builder": "dockerfile"
   },
   "deploy": {
     "numReplicas": 1,
