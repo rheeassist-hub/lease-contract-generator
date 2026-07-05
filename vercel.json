@@ -1,22 +1,13 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "frontend/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "frontend/dist"
-      }
-    }
-  ],
+  "buildCommand": "cd frontend && npm install && npm run build",
+  "outputDirectory": "frontend/dist",
   "routes": [
     {
       "src": "/(.*)",
       "dest": "frontend/dist/index.html"
     }
   ],
-  "buildCommand": "cd frontend && npm install && npm run build",
-  "outputDirectory": "frontend/dist",
   "env": {
     "VITE_API_URL": "https://lease-contract-generator-backend.railway.app/api"
   }
