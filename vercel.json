@@ -15,9 +15,9 @@
       "dest": "frontend/dist/index.html"
     }
   ],
-  "env": {
-    "VITE_API_URL": "@vite_api_url"
-  },
   "buildCommand": "cd frontend && npm install && npm run build",
-  "outputDirectory": "frontend/dist"
+  "outputDirectory": "frontend/dist",
+  "env": {
+    "VITE_API_URL": "https://lease-contract-generator-backend.railway.app/api"
+  }
 }
